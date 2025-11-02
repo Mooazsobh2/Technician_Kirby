@@ -1,0 +1,11 @@
+# .gitignore
+
+# التبعيات
+/node_modules
+
+# مجلد البناء
+/dist
+
+# ملفات النظام/البيئة
+.env
+.DS_Store
