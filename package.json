@@ -2,7 +2,7 @@
   "name": "my-app-ts",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Mooazsobh2.github.io/Kirby4/",
+  "homepage": "https://Mooazsobh2.github.io/Kirby_App/",
   "type": "module",
   "scripts": {
     "dev": "vite",
