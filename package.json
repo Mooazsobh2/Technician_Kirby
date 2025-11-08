@@ -2,7 +2,7 @@
   "name": "my-app-ts",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Mooazsobh2.github.io/Mangment_Kirby/",
+  "homepage": "https://Mooazsobh2.github.io/Technicain_Kirby/",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,11 +13,13 @@
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
+    "@types/xlsx": "^0.0.35",
     "@vitejs/plugin-react": "^4.3.2",
     "autoprefixer": "^10.4.20",
     "gh-pages": "^6.3.0",
