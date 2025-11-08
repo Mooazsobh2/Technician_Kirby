@@ -166,7 +166,7 @@ export default function TechApp() {
           { key: "fuel", label: "الوقود", icon: "⛽" },
           { key: "times", label: "الأوقات", icon: "⏱️" },
           { key: "profile", label: "الملف", icon: "👤" },
-          { key: "technicians", label: "متابعة الفنيين", icon: "🗂️" },
+          { key: "technicians", label: " تقارير", icon: "🗂️" },
         ].map((t) => (
           <button key={t.key} onClick={()=>setTab(t.key as any)} className={`flex flex-col text-xs items-center ${tab===t.key?"text-red-800":"text-gray-500"}`}>
             <span className="text-lg">{t.icon}</span>
@@ -365,12 +365,7 @@ function FuelTab({ kmSinceRefuel, setKmSinceRefuel, fuelLogs, setFuelLogs }:{ km
 
       <div className="p-4 border rounded-2xl">
         <h4 className="font-semibold mb-2">فاتورة تعبئة</h4>
-        <div className="grid md:grid-cols-4 gap-2 text-sm">
-          <input className="border rounded-2xl p-2" placeholder="رقم الفاتورة" value={invoiceNo} onChange={e=>setInvoiceNo(e.target.value)} />
-          <input className="border rounded-2xl p-2" placeholder="لتر" type="number" value={liters} onChange={e=>setLiters(+e.target.value)} />
-          <input className="border rounded-2xl p-2" placeholder="المبلغ ر.س" type="number" value={amountSAR} onChange={e=>setAmountSAR(+e.target.value)} />
-          <input className="border rounded-2xl p-2" placeholder="اسم موظفة الريسبشن" value={receptionist} onChange={e=>setReceptionist(e.target.value)} />
-        </div>
+
         <button className="mt-2 bg-red-800 text-white rounded-2xl px-4 py-2" onClick={submitRefuel}>تسجيل تعبئة + تصفير العداد</button>
       </div>
 
